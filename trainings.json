@@ -1,0 +1,47 @@
+[
+    {
+        "training_id": 1,
+        "student_id": 123,
+        "exercises": [
+            {
+                "name": "Supino",
+                "sets": 3,
+                "reps": 10,
+                "weight": 75
+            },
+            {
+                "name": "Agachamento",
+                "sets": 4,
+                "reps": 8,
+                "weight": 100
+            }
+        ],
+        "date": "2023-10-01"
+    },
+    {
+        "training_id": 2,
+        "student_id": 123,
+        "exercises": [
+            {
+                "name": "Puxada",
+                "sets": 3,
+                "reps": 12,
+                "weight": 50
+            }
+        ],
+        "date": "2023-10-02"
+    },
+    {
+        "training_id": 3,
+        "student_id": 789,
+        "exercises": [
+            {
+                "name": "Corrida",
+                "sets": 1,
+                "reps": "30 min",
+                "weight": null
+            }
+        ],
+        "date": "2023-10-03"
+    }
+]

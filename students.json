@@ -1,0 +1,29 @@
+[
+    {
+        "student_id": 123,
+        "name": "João Silva",
+        "date_of_birth": "1990-01-01",
+        "sex": "Male",
+        "weight": 75,
+        "height": 180,
+        "trainer_id": 1
+    },
+    {
+        "student_id": 456,
+        "name": "Ana Costa",
+        "date_of_birth": "1993-03-22",
+        "sex": "Female",
+        "weight": 65,
+        "height": 170,
+        "trainer_id": 2
+    },
+    {
+        "student_id": 789,
+        "name": "Beto Lima",
+        "date_of_birth": "1988-07-11",
+        "sex": "Male",
+        "weight": 70,
+        "height": 175,
+        "trainer_id": 1
+    }
+]

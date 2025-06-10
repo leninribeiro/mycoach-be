@@ -1,0 +1,16 @@
+[
+    {
+        "trainer_id": 1,
+        "name": "Maria Oliveira",
+        "date_of_birth": "1990-01-01",
+        "sex": "Female",
+        "students": [123, 789]
+    },
+    {
+        "trainer_id": 2,
+        "name": "John Doe",
+        "date_of_birth": "1985-05-15",
+        "sex": "Male",
+        "students": [456]
+    }
+]
