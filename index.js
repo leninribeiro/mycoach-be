@@ -113,13 +113,16 @@ app.get('/student/:id', authenticateToken, (req, res) => {
 // POST /{aluno_id}/training
 app.post('/:aluno_id/training', authenticateToken, (req, res) => {
     const { aluno_id } = req.params;
-    const { training } = req.body;
+    const { weekday, observations, exercises } = req.body;
+    let training = { weekday, observations, exercises };
 
     const student = users.find(s => s.id === parseInt(aluno_id));
 
     if (!student) {
         return res.status(404).json({ error: "Student not found" });
     }
+
+    console.log(training)
 
     if (!training || !Array.isArray(training.exercises)) {
         return res.status(400).json({ error: 'Invalid input data' });
