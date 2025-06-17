@@ -2,8 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
+const cors = require('cors');
+
 
 const app = express();
+app.use(cors({
+    origin: 'http://localhost:9000',
+    credentials: true // se você precisar enviar cookies ou headers de auth
+  }));
 app.use(bodyParser.json());
 
 const SECRET_KEY = 'mycoach';

@@ -2,46 +2,25 @@
     {
         "id": 1,
         "student_id": 123,
-        "exercises": [
-            {
-                "name": "Supino",
-                "sets": 3,
-                "reps": 10,
-                "weight": 75
-            },
-            {
-                "name": "Agachamento",
-                "sets": 4,
-                "reps": 8,
-                "weight": 100
-            }
-        ],
+        "weekday": "Monday",
+        "observations": "Treino focado em força",
+        "exercises": ["Supino", "Agachamento"],
         "date": "2023-10-01"
     },
     {
         "id": 2,
         "student_id": 123,
-        "exercises": [
-            {
-                "name": "Puxada",
-                "sets": 3,
-                "reps": 12,
-                "weight": 50
-            }
-        ],
+        "weekday": "Tuesday",
+        "observations": "Treino focado em força",
+        "exercises": ["Levantamento Terra", "Supino"],
         "date": "2023-10-02"
     },
     {
         "id": 3,
         "student_id": 789,
-        "exercises": [
-            {
-                "name": "Corrida",
-                "sets": 1,
-                "reps": "30 min",
-                "weight": null
-            }
-        ],
+        "weekday": "Monday",
+        "observations": "Treino focado em hipertrofia",
+        "exercises": ["Supino", "Crucifixo", "Tríceps Roldana"],
         "date": "2023-10-03"
     }
 ]
