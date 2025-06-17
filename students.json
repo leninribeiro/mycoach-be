@@ -1,29 +1,38 @@
 [
     {
-        "student_id": 123,
+        "id": 123,
         "name": "João Silva",
         "date_of_birth": "1990-01-01",
         "sex": "Male",
         "weight": 75,
         "height": 180,
-        "trainer_id": 1
+        "trainer_id": 1,
+        "username": "joao_silva",
+        "password": "hashed_password_123",
+        "role": "student"
     },
     {
-        "student_id": 456,
+        "id": 456,
         "name": "Ana Costa",
         "date_of_birth": "1993-03-22",
         "sex": "Female",
         "weight": 65,
         "height": 170,
-        "trainer_id": 2
+        "trainer_id": 2,
+        "username": "ana_costa",
+        "password": "hashed_password_456",
+        "role": "student"
     },
     {
-        "student_id": 789,
+        "id": 789,
         "name": "Beto Lima",
         "date_of_birth": "1988-07-11",
         "sex": "Male",
         "weight": 70,
         "height": 175,
-        "trainer_id": 1
+        "trainer_id": 1,
+        "username": "beto_lima",
+        "password": "hashed_password_789",
+        "role": "student"
     }
 ]

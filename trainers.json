@@ -1,16 +1,22 @@
 [
     {
-        "trainer_id": 1,
+        "id": 1,
         "name": "Maria Oliveira",
         "date_of_birth": "1990-01-01",
         "sex": "Female",
-        "students": [123, 789]
+        "students": [123, 789],
+        "username": "maria_oliveira",
+        "password": "hashed_password_1",
+        "role": "trainer"
     },
     {
-        "trainer_id": 2,
+        "id": 2,
         "name": "John Doe",
         "date_of_birth": "1985-05-15",
         "sex": "Male",
-        "students": [456]
+        "students": [456],
+        "username": "john_doe",
+        "password": "hashed_password_2",
+        "role": "trainer"
     }
 ]
