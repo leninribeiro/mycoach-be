@@ -2,7 +2,7 @@
     {
         "id": 1,
         "student_id": 123,
-        "weekday": "Monday",
+        "day": "Segunta-Feira",
         "observations": "Treino focado em força",
         "exercises": ["Supino", "Agachamento"],
         "date": "2023-10-01"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "student_id": 123,
-        "weekday": "Tuesday",
+        "day": "Terça-Feira",
         "observations": "Treino focado em força",
         "exercises": ["Levantamento Terra", "Supino"],
         "date": "2023-10-02"
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "student_id": 789,
-        "weekday": "Monday",
+        "day": "Quarta-Feira",
         "observations": "Treino focado em hipertrofia",
         "exercises": ["Supino", "Crucifixo", "Tríceps Roldana"],
         "date": "2023-10-03"

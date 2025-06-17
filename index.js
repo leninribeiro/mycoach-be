@@ -70,10 +70,10 @@ app.post('/trainer', authenticateToken, restrictToTrainers, (req, res) => {
 });
 
 // GET /trainer/{id}
-app.get('/trainer/:id', authenticateToken, restrictToTrainers, (req, res) => {
+app.get('/trainer/:id', authenticateToken, (req, res) => {
     const { id } = req.params;
     const trainer = users.find(t => t.id === parseInt(id));
-    if (!trainer || !trainer.role || trainer.role !== 'trainer') {
+    if (!trainer || !trainer.role || trainer.role !== 'Treinador') {
         return res.status(404).json({ error: "Trainer not found" });
     }
 
@@ -119,8 +119,8 @@ app.get('/student/:id', authenticateToken, (req, res) => {
 // POST /{aluno_id}/training
 app.post('/:aluno_id/training', authenticateToken, (req, res) => {
     const { aluno_id } = req.params;
-    const { weekday, observations, exercises } = req.body;
-    let training = { weekday, observations, exercises };
+    const { day, observations, exercises } = req.body;
+    let training = { day, observations, exercises };
 
     const student = users.find(s => s.id === parseInt(aluno_id));
 
@@ -134,8 +134,17 @@ app.post('/:aluno_id/training', authenticateToken, (req, res) => {
         return res.status(400).json({ error: 'Invalid input data' });
     }
 
+    let exerciseList = []
+    training.exercises.forEach(exercise => {
+        exerciseList.push(exercise.label)
+    })
+
+    training.exercises = exerciseList;
+    console.log(exerciseList)
+
     const trainingId = trainings.length + 1;
     trainings.push({ id: trainingId, student_id: parseInt(aluno_id), ...training, date: new Date().toISOString().split('T')[0] });
+    
 
     return res.json({ message: "Training created successfully", id: trainingId });
 });

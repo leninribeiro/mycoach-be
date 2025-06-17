@@ -2,12 +2,13 @@
     {
         "id": 1,
         "name": "Maria Oliveira",
-        "date_of_birth": "1990-01-01",
+        "date_of_birth": "03/10/1996",
         "sex": "Female",
         "students": [123, 789],
-        "username": "maria_oliveira",
+        "username": "maria_oliveira@gmail.com",
         "password": "hashed_password_1",
-        "role": "trainer"
+        "cpf" : "12345678900",
+        "role": "Treinador"
     },
     {
         "id": 2,
@@ -17,6 +18,6 @@
         "students": [456],
         "username": "john_doe",
         "password": "hashed_password_2",
-        "role": "trainer"
+        "role": "Treinador"
     }
 ]

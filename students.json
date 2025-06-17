@@ -2,14 +2,15 @@
     {
         "id": 123,
         "name": "João Silva",
-        "date_of_birth": "1990-01-01",
+        "date_of_birth": "02/04/2001",
         "sex": "Male",
         "weight": 75,
         "height": 180,
+        "cpf": "12345678901",
         "trainer_id": 1,
         "username": "joao_silva@gmail.com",
         "password": "hashed_password_123",
-        "role": "student"
+        "role": "Aluno"
     },
     {
         "id": 456,
@@ -21,7 +22,7 @@
         "trainer_id": 2,
         "username": "ana_costa",
         "password": "hashed_password_456",
-        "role": "student"
+        "role": "Aluno"
     },
     {
         "id": 789,
@@ -33,6 +34,6 @@
         "trainer_id": 1,
         "username": "beto_lima",
         "password": "hashed_password_789",
-        "role": "student"
+        "role": "Aluno"
     }
 ]
